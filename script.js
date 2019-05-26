@@ -1,10 +1,8 @@
-let timeend, days, hours, minutes ;
+let timeend;
 timeend = new Date (2019, 05, 26, 24, 00);
 function time() {
     today = new Date();
     today = Math.floor((timeend-today)/1000);
-    today = Math.floor(today/60);
-    today = Math.floor(today/60);
     tmin = today%60;
     today = Math.floor(today/60);
     if (tmin < 10) tmin = '0' + tmin;
